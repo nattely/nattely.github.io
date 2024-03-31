@@ -1,0 +1,721 @@
+/* Universal base styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Main container that wraps everything */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header styling */
+.header-content {
+    max-width: 1400px;
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFEFEF;
+    overflow-x: hidden;
+}
+
+/* Removing default margins and paddings */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header when the page is not scrolled */
+header {
+    background-color: #BDD2B6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1400px;
+    height: 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and navigation to the right */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease; /* Transition for smooth background color change */
+    padding: 0 15px; /* This will give some space on the sides */
+    justify-content: center; /* This centers the logo text when scrolled */
+}
+
+/* Styling for the header when the page is scrolled */
+header.scrolled {
+    position: fixed;
+    background-color: #BDD2B6; /* Change background color when scrolled */
+    z-index: 1000;
+    height: 70px;
+    transition: height 0.3s ease; /* Transition for header resizing */
+    padding: 0 15px; /* Add padding to maintain consistency with unscrolled header */
+}
+
+/* Logo and navigation styling */
+.logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo image to the left */
+    flex-grow: 1; /* Allow logo image container to grow */
+    transition: opacity 0.3s ease; /* Transition for logo image opacity */
+}
+
+.logo-image img {
+    max-height: 80px; /* Maximum height for the logo image */
+    height: 80px;
+    transition: opacity 0.3s ease; /* Transition for smooth fade in/out */
+}
+
+.logo-text {
+    display: none; /* Initially logo text is not displayed */
+    opacity: 0; /* Initially logo text is transparent */
+    position: absolute; /* Absolute position allows placement relative to the parent */
+    left: 15px; /* Aligns with the padding of the header */
+    top: 0; /* Aligns to the top of the header */
+    height: 100px; /* Height to match the header */
+    line-height: 100px; /* Centers the text vertically */
+    margin: 0; /* Removes any default margin */
+    transition: opacity 0.3s ease; /* Transition for smooth fade in/out */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    align-self: center;
+    margin-right: auto; /* Align logo text to the left */
+}
+
+header.scrolled .logo-image {
+    opacity: 0; /* Logo image fades out when scrolled */
+    visibility: hidden; /* Hide the logo image to prevent it from taking space */
+}
+
+header.scrolled .logo-text {
+    position: relative; /* Position relative to the header */
+    display: block; /* Display logo text when header is scrolled */
+    opacity: 1; /* Logo text fades in when scrolled */
+    line-height: 70px; /* Vertically center the text within the scrolled header */
+    height: 70px; /* Adjust height to match the scrolled header */
+    transition: opacity 0.3s ease; /* Transition for smooth fade in/out */
+}
+
+header.scrolled nav {
+    position: absolute; /* Absolute position to move as needed */
+    right: 15px; /* Aligns with the padding of the header */
+    top: 0; /* Aligns to the top of the header */
+    height: 70px; /* Height to match the scrolled header */
+}
+
+header:not(.scrolled) .logo-image {
+    opacity: 1; /* Logo image is visible when not scrolled */
+    visibility: visible; /* Make logo image take up space */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Transition for smooth fade in/out */
+}
+
+header:not(.scrolled) .logo-text {
+    opacity: 0; /* Logo text is hidden when not scrolled */
+    display: none; /* Logo text does not take up space */
+    transition: opacity 0.3s ease; /* Transition for smooth fade in/out */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end; /* Align navigation items to the right */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Button styling */
+.book-now-btn {
+    padding: 10px 20px;
+    border: 2px solid #798777;
+    background-color: #798777;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: transparent;
+    color: #798777;
+}
+
+/* Language switch styling */
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* adjust the gap size as needed */
+}
+
+.language-flag {
+    width: 24px; /* adjust the flag size as needed */
+    height: auto;
+}
+
+/* Hero section styling */
+#hero {
+    margin-top: 100px;
+    padding-top: 100px;
+    z-index: 0;
+    position: relative;
+    background: url('/images/nattely_hero.jpg') no-repeat center center/cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 120px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #F8EDE3;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    color: #F8EDE3;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    transform: translateY(-50px);
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary, .btn-secondary {
+    margin-right: 20px;
+    padding: 15px 30px;
+    border: 2px solid #F8EDE3;
+    background-color: transparent;
+    color: #F8EDE3;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #798777;
+    color: #F8EDE3;
+    border-color: #798777;
+}
+
+/* Rooms Section */
+#rooms {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #F8EDE3; /* Sets the background color to white */
+    height: 900px;
+    color: #131316;
+}
+
+.section-title-bar {
+    width: 100%; /* Ensure full viewport width coverage */
+    height: 10px;
+    background-color: #798777;
+    color: #EDF1D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-bar-content {
+    max-width: 1600px; /* Limit content width, not the bar itself */
+    width: 100%; /* Ensure it takes up all available width within the bar */
+    text-align: center; /* Center the title text */
+    margin: 0 auto; /* Center the content container if it's less than max-width */
+}
+
+.title-bar-content h2 {
+    margin: 0; /* Ensure the title is aligned properly */
+    font-size: 2em;
+}
+
+
+.room-showcase-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room-showcase-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 500px; /* Set a minimum height to maintain layout during transitions */
+}
+
+.cycle-menu {
+    display: flex; /* Align buttons in a row */
+    justify-content: center; /* Center buttons in the menu */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons to next line on small screens */
+    margin-bottom: 20px; /* Space below the menu */
+}
+
+.cycle-menu button {
+    padding: 10px 20px; /* Padding inside the buttons */
+    background-color: transparent; /* Light grey background */
+    border: 2px solid #798777; /* Border color */
+    color: #798777; /* Font color */
+    font-size: 1em; /* Button font size */
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    transition: all 0.3s ease; /* Transition for interactive states */
+    text-transform: uppercase; /* Uppercase button text */
+    justify-content: center;
+    text-align: center;
+}
+
+.cycle-menu button:hover,
+.cycle-menu button.selected {
+  background-color: #798777;
+  color: #FFF;
+  border-color: #798777;
+}
+
+.cycle-menu button.selected {
+    border-color: #798777;
+    color: #FFF;
+    font-weight: bold;
+  }
+
+.cycle-menu button {
+    flex: 1; /* Buttons will share space equally */
+    min-width: 150px; /* Minimum width for each button */
+    max-width: 200px; /* Maximum width for each button */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis to overflow text */
+}
+
+/* Button inner content styling */
+.button-content {
+    display: flex;
+    flex-direction: column; /* Stack the title and subtitle vertically */
+    justify-content: center;
+}
+
+.button-title {
+    font-weight: bold; /* Bold title */
+    margin-bottom: 5px; /* Space between title and subtitle */
+
+}
+
+.button-subtitle {
+    font-weight: normal; /* Regular subtitle */
+    font-size: 0.85em; /* Smaller text for subtitle */
+}
+
+.room-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+    transform: translateX(100%); /* Start offscreen to the right */
+}
+
+.room-display.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0s linear 0s, transform 0s;
+    transform: translateX(0); /* Slide in to view */
+    z-index: 2; /* Make sure the active room is above the others */
+}
+
+/* Animation classes for sliding in and out */
+.slide-in-left {
+    animation: slideLeftIn 0.5s forwards;
+}
+
+.slide-in-right {
+    animation: slideRightIn 0.5s forwards;
+}
+
+.slide-out-left {
+    animation: slideLeftOut 0.5s forwards;
+}
+
+.slide-out-right {
+    animation: slideRightOut 0.5s forwards;
+}
+
+/* Keyframes for the animations */
+@keyframes slideLeftIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideRightIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideLeftOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+@keyframes slideRightOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+.room-images {
+    display: flex;
+    justify-content: center; /* This will center the images */
+    align-items: center; /* This will vertically center the images, if necessary */
+    gap: 20px; /* This will create space between the images */
+    padding: 0 10px; /* This adds padding on the left and right */
+    width: 100%; /* This makes sure the container takes full width */
+  }
+  
+  .room-images img {
+    width: 500px; /* This calculates the width to be half of the container minus the gap */
+    height: 400px; /* This sets a fixed height for the images */
+    object-fit: cover; /* This ensures the images cover the area without stretching */
+  }
+
+  .room-details {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between; /* Adjust if you want different spacing */
+    align-items: flex-start;
+    margin: auto; /* Centers the .room-details container */
+}
+
+.room-description,
+.room-features {
+    width: 45%; /* Adjust the width to leave space between the two columns */
+}
+
+.room-description {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.room-features {
+    text-align: left;
+}
+
+.room-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.room-features ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .room-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-description, .room-features {
+        width: 100%; /* Full width for mobile view */
+        padding-right: 0; /* Remove padding-right on mobile view */
+        text-align: center; /* Center align on mobile view */
+    }
+
+    .room-images img {
+        width: 80%; /* Larger width for images on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+}
+
+/* ABOUT US */
+#about {
+    background-color: #A2B29F;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.about-highlights {
+    list-style: inside;
+    padding-left: 0;
+}
+
+.about-highlights li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    max-width: 600px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+.about-content-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .about-content-reverse {
+        flex-direction: column-reverse; /* Stack image on top of text on small screens */
+    }
+}
+
+/* FIND US */
+#find-us {
+    background-color: #F8EDE3;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .find-us-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .section-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .location-info, .parking-maps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-section, .parking-maps {
+    flex: 1;
+  }
+
+  .text-section {
+    max-width: 400px;
+    margin: auto; /* This will center the text section if it's within a flex container */
+  }
+  
+  .map-container iframe {
+    width: 100%; /* Responsive width */
+    max-width: 800px; /* Maximum width */
+    width: 600px;
+    height: 500px; /* Fixed height */
+  }
+
+  #parking-options {
+    text-align: center; /* Center-align the text */
+    max-width: 1200px; /* Maximum width of the parking options section */
+    margin: auto; /* Center the section itself */
+    margin-top: 100px;
+}
+
+.parking-title h2, .parking-title p {
+    margin: 0 0 20px; /* Add some bottom margin for spacing */
+}
+
+.parking-maps {
+    display: flex;
+    justify-content: center; /* Center the maps within the container */
+    gap: 20px; /* Space between the maps */
+    flex-wrap: wrap; /* Allow the maps to wrap on smaller screens */
+    margin-top: 20px; /* Space above the maps */
+}
+
+.parking-maps iframe {
+    border: 0; /* Remove default iframe border */
+    width: 400px; /* Set width of maps */
+    height: 300px; /* Set height of maps */
+    max-width: 90%; /* Maximum width to ensure responsiveness */
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #A2B29F;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  
+  .contact-info h2 {
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info hr {
+    border-top: 3px solid #798777; /* Adjust the color to match the design */
+    width: 500px;
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+  
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #798777; /* Adjust the color to match the design */
+    color: #FFF;
+    border:2px solid #798777;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: transparent; /* Adjust the color to match the design */
+    color: #798777;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+/* FOOTER */
+footer {
+    background-color: #263238; /* Dark blue color */
+    color: #FFFFFF; /* White text color */
+    padding: 20px 0; /* Padding above and below the content */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; /* Padding on the sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media a {
+    color: #FFFFFF; /* Icons color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.social-media a:hover {
+    color: #78909C; /* Lighter blue color on hover */
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,238 @@
+<!--- NAVIGATION --->
+Hjem
+
+Norwegian: Hjem
+Swedish: Hem
+English: Home
+German: Startseite
+Værelser
+
+Norwegian: Rom
+Swedish: Rum
+English: Rooms
+German: Zimmer
+Om os
+
+Norwegian: Om oss
+Swedish: Om oss
+English: About Us
+German: Über uns
+Find os
+
+Norwegian: Finn oss
+Swedish: Hitta oss
+English: Find Us
+German: Finden Sie uns
+Kontakt
+
+Norwegian: Kontakt
+Swedish: Kontakt
+English: Contact
+German: Kontakt
+Book nu
+
+Norwegian: Book nå
+Swedish: Boka nu
+English: Book Now
+German: Jetzt buchen
+<!--- HERO --->
+Overnatning i Viborg, nær domkirken.
+Norwegian: Overnatting i Viborg, nær domkirken.
+Swedish: Boende i Viborg, nära domkyrkan.
+English: Accommodation in Viborg, near the cathedral.
+German: Unterkunft in Viborg, in der Nähe des Doms.
+<!--- ROOMS --->
+Enkelt værelse
+
+Norwegian: Enkeltrom
+Swedish: Enkelrum
+English: Single Room
+German: Einzelzimmer
+Dobbelt værelse
+
+Norwegian: Dobbeltrom
+Swedish: Dubbelrum
+English: Double Room
+German: Doppelzimmer
+Lejlighed
+
+Norwegian: Leilighet
+Swedish: Lägenhet
+English: Apartment
+German: Wohnung
+400 DKK pr. nat
+
+Norwegian: 400 DKK per natt
+Swedish: 400 DKK per natt
+English: 400 DKK per night
+German: 400 DKK pro Nacht
+<!--- MANGLER BESKRIVELSE --->
+Norwegian: <!--- MANGLENDE BESKRIVELSE --->
+Swedish: <!--- SAKNAR BESKRIVNING --->
+English: <!--- MISSING DESCRIPTION --->
+German: <!--- BESCHREIBUNG FEHLT --->
+Rabat gives ved længere ophold.
+
+Norwegian: Rabatt gis ved lengre opphold.
+Swedish: Rabatt ges vid längre vistelser.
+English: Discount available for longer stays.
+German: Rabatt bei längerem Aufenthalt.
+Fælles bad
+
+Norwegian: Felles bad
+Swedish: Gemensamt badrum
+English: Shared Bathroom
+German: Gemeinschaftsbad
+Håndklæder og sengelinned er inklusiv
+
+Norwegian: Håndklær og sengetøy er inkludert
+Swedish: Handdukar och sängkläder ingår
+English: Towels and bed linen are included
+German: Handtücher und Bettwäsche sind inklusive
+Gratis WIFI
+
+Norwegian: Gratis WIFI
+Swedish: Gratis WIFI
+English: Free WIFI
+German: Gratis WLAN
+TV
+
+Norwegian: TV
+Swedish: TV
+English: TV
+German: Fernseher
+Gratis té og kaffe
+
+Norwegian: Gratis te og kaffe
+Swedish: Gratis te och kaffe
+English: Free tea and coffee
+German: Kostenloser Tee und Kaffee
+Røgfri
+
+Norwegian: Røykfritt
+Swedish: Rökfritt
+English: Non-smoking
+German: Nichtraucher
+Gæstekøkken adgang
+
+Norwegian: Tilgang til gjestekjøkken
+Swedish: Tillgång till gästkök
+English: Access to guest kitchen
+German: Zugang zur Gästeküche
+<!--- ABOUT US --->
+Byhus fra 1877
+
+Norwegian: Byhus fra 1877
+Swedish: Stadshus från 1877
+English: Townhouse from 1877
+German: Stadthaus aus dem Jahr 1877
+Midt i Viborgs historiske gader findes Nattely Bed & Breakfast...
+
+Norwegian: Midt i Viborgs historiske gater finner du Nattely Bed & Breakfast...
+Swedish: Mitt i Viborgs historiska gator finns Nattely Bed & Breakfast...
+English: In the middle of Viborg's historical streets, you will find Nattely Bed & Breakfast...
+German: Mitten in den historischen Straßen Viborgs befindet sich das Nattely Bed & Breakfast...
+Vi er et lille bed and breakfast...
+
+Norwegian: Vi er et lite bed and breakfast...
+Swedish: Vi är ett litet bed and breakfast...
+English: We are a small bed and breakfast...
+German: Wir sind ein kleines Bed & Breakfast...
+Lokaliseret i den gamle bydel af Viborg den gamle hovedstad.
+
+Norwegian: Lokalisert i den gamle bydelen av Viborg, den gamle hovedstaden.
+Swedish: Beläget i den gamla stadsdelen av Viborg, den gamla huvudstaden.
+English: Located in the old town of Viborg, the old capital.
+German: Gelegen im alten Stadtteil von Viborg, der alten Hauptstadt.
+Gratis te og kaffe til Nattelys gæster.
+
+Norwegian: Gratis te og kaffe til Nattelys gjester.
+Swedish: Gratis te och kaffe till Nattelys gäster.
+English: Free tea and coffee for Nattely's guests.
+German: Kostenloser Tee und Kaffee für Gäste von Nattely.
+Gratis wifi.
+
+Norwegian: Gratis wifi.
+Swedish: Gratis wifi.
+English: Free wifi.
+German: Kostenloses WLAN.
+TV på alle værelser
+
+Norwegian: TV på alle rom
+Swedish: TV på alla rum
+English: TV in all rooms
+German: Fernseher in allen Zimmern
+Mulighed for at tilberede sin morgenmad i gæstekøkkenet...
+
+Norwegian: Mulighet til å tilberede sin frokost i gjestekjøkkenet...
+Swedish: Möjlighet att tillaga sin frukost i gästköket...
+English: The opportunity to prepare your breakfast in the guest kitchen...
+German: Möglichkeit, sein Frühstück in der Gästeküche zuzubereiten...
+Røgfri omgivelser.
+
+Norwegian: Røykfrie omgivelser.
+Swedish: Rökfria omgivningar.
+English: Smoke-free surroundings.
+German: Rauchfreie Umgebung.
+<!--- FIND US --->
+Find os her:
+
+Norwegian: Finn oss her:
+Swedish: Hitta oss här:
+English: Find us here:
+German: Finden Sie uns hier:
+Besøg os på vores bekvemme beliggenhed...
+
+Norwegian: Besøk oss på vår praktiske beliggenhet...
+Swedish: Besök oss på vårt bekväma läge...
+English: Visit us at our convenient location...
+German: Besuchen Sie uns an unserem günstigen Standort...
+Parkerings muligheder
+
+Norwegian: Parkeringsmuligheter
+Swedish: Parkeringsmöjligheter
+English: Parking options
+German: Parkmöglichkeiten
+For nemheds skyld er her et par parkeringsmuligheder...
+
+Norwegian: For enkelhets skyld, her er noen parkeringsmuligheter...
+Swedish: För enkelhetens skull, här är några parkeringsalternativ...
+English: For convenience, here are a few parking options...
+German: Zur Erleichterung hier einige Parkmöglichkeiten...
+<!--- CONTACT --->
+Kontakt os for booking!
+
+Norwegian: Kontakt oss for booking!
+Swedish: Kontakta oss för bokning!
+English: Contact us for booking!
+German: Kontaktieren Sie uns für eine Buchung!
+Send os en besked igennem kontakt formularen...
+
+Norwegian: Send oss en melding gjennom kontaktskjemaet...
+Swedish: Skicka oss ett meddelande genom kontaktformuläret...
+English: Send us a message through the contact form...
+German: Senden Sie uns eine Nachricht über das Kontaktformular...
+Navn
+
+Norwegian: Navn
+Swedish: Namn
+English: Name
+German: Name
+Telefon nummer
+
+Norwegian: Telefonnummer
+Swedish: Telefonnummer
+English: Phone Number
+German: Telefonnummer
+Besked
+
+Norwegian: Melding
+Swedish: Meddelande
+English: Message
+German: Nachricht
+Send besked
+
+Norwegian: Send melding
+Swedish: Skicka meddelande
+English: Send Message
+German: Nachricht senden

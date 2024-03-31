@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Bed & Breakfast</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b90372b8f2.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Header Content: Logo and Navigation -->
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <img src="/images/Nattely-Viborg-Logo.png" alt="Logo">
+                    </div>
+                    <div class="logo-text">NATTELY</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#hero">Hjem</a></li>
+                        <li><a href="#rooms">Rom</a></li>
+                        <li><a href="#about">Om oss</a></li>
+                        <li><a href="#find-us">Finn oss</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#contact" class="book-now-btn">Book nå</a></li>
+                        <li class="language-switch">
+                            <a href="/" title="Dansk" class="current-lang">
+                                <img src="/images/SVG/DK_lang.svg" alt="DA" class="language-flag">
+                            </a>
+                            <a href="/en/" title="English">
+                                <img src="/images/SVG/EN_lang.svg" alt="EN" class="language-flag">
+                            </a>
+                            <a href="/no/" title="Norsk" class="current-lang">
+                                <img src="/images/SVG/NO_lang.svg" alt="DA" class="language-flag">
+                            </a>
+                            <a href="/se/" title="Svenska">
+                                <img src="/images/SVG/SE_lang.svg" alt="EN" class="language-flag">
+                            </a>
+                            <a href="/de/" title="Deutsch">
+                                <img src="/images/SVG/DE_lang.svg" alt="EN" class="language-flag">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Hero Section: Main banner with Call-to-Action buttons -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>OVERNATTING<br> I VIBORG</h1>
+                <p>...nær domkirken.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-primary">Om oss</a>
+                    <a href="#contact" class="btn-secondary">Book nå</a>
+                </div>
+            </div>
+        </section>
+        <!-- Room Section: Showcase of rooms-->
+        <div class="section-title-bar">
+        </div>
+        <section id="rooms">
+            <div class="room-showcase-section">
+                <div class="cycle-menu">
+                    <button onclick="showRoom(1)">
+                        <div class="button-content">
+                            <div class="button-title">Enkelt værelse</div>
+                            <div class="button-subtitle">Fælles bad</div>
+                        </div>
+                    </button>
+                    <button onclick="showRoom(2)">
+                        <div class="button-content">
+                            <div class="button-title">Dobbelt værelse</div>
+                            <div class="button-subtitle">Fælles bad</div>
+                        </div>
+                    </button>
+                    <button onclick="showRoom(3)">
+                        <div class="button-content">
+                            <div class="button-title">Dobbelt værelse</div>
+                            <div class="button-subtitle">Eget bad</div>
+                        </div>
+                    </button>
+                    <button onclick="showRoom(4)">
+                        <div class="button-content">
+                            <div class="button-title">lejlighed</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="room-showcase-wrapper">
+                    <div class="room-display active" id="room1" data-room="1">
+                        <div class="room-images">
+                            <img src="/images/v_demo1.jpg" alt="Room Image 1">
+                            <img src="/images/v_demo2.jpg" alt="Room Image 2">
+                        </div>
+                        <h3>400 kr. pr. nat</h3>
+                        <div class="room-details">
+                            
+                            <div class="room-description">
+                                <p>Vores smukt indrettede 1-værelses lejlighed er det perfekte tilflugtssted for par eller enlige rejsende, der søger en fredelig pause fra hverdagens travlhed. Værelset er udstyret med en komfortabel seng, klædt i blødt, luksuriøst sengetøj, der garanterer en god nats søvn. Store vinduer sikrer rigeligt med naturligt lys.<br><br><b>Rabat gives ved længere ophold.</b></p>
+                            </div>
+                            <div class="room-features">
+                                <ul>
+                                    <li>Fælles bad</li>
+                                    <li>Håndklæder og sengelinned er inklusiv</li>
+                                    <li>Gratis WIFI</li>
+                                    <li>TV</li>
+                                    <li>Gratis té og kaffe</li>
+                                    <li>Røgfri</li>
+                                    <li>Gæstekøkken adgang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-display" id="room2" data-room="2">
+                        <div class="room-images">
+                            <img src="/images/v_demo1.jpg" alt="Room Image 1">
+                            <img src="/images/v_demo2.jpg" alt="Room Image 2">
+                        </div>
+                        <h3>500 kr. pr. nat</h3>
+                        <div class="room-details">
+                            
+                            <div class="room-description">
+                                <p>Vores smukt indrettede 1-værelses lejlighed er det perfekte tilflugtssted for par eller enlige rejsende, der søger en fredelig pause fra hverdagens travlhed. Værelset er udstyret med en komfortabel seng, klædt i blødt, luksuriøst sengetøj, der garanterer en god nats søvn. Store vinduer sikrer rigeligt med naturligt lys.<br><br><b>Rabat gives ved længere ophold.</b></p>
+                            </div>
+                            <div class="room-features">
+                                <ul>
+                                    <li>Fælles bad</li>
+                                    <li>Håndklæder og sengelinned er inklusiv</li>
+                                    <li>Gratis WIFI</li>
+                                    <li>TV</li>
+                                    <li>Gratis té og kaffe</li>
+                                    <li>Røgfri</li>
+                                    <li>Gæstekøkken adgang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-display" id="room3" data-room="3">
+                        <div class="room-images">
+                            <img src="/images/v_demo1.jpg" alt="Room Image 1">
+                            <img src="/images/v_demo2.jpg" alt="Room Image 2">
+                        </div>
+                        <h3>650 kr. pr. nat</h3>
+                        <div class="room-details">
+                            
+                            <div class="room-description">
+                                <p>Vores smukt indrettede 1-værelses lejlighed er det perfekte tilflugtssted for par eller enlige rejsende, der søger en fredelig pause fra hverdagens travlhed. Værelset er udstyret med en komfortabel seng, klædt i blødt, luksuriøst sengetøj, der garanterer en god nats søvn. Store vinduer sikrer rigeligt med naturligt lys.<br><br><b>Rabat gives ved længere ophold.</b></p>
+                            </div>
+                            <div class="room-features">
+                                <ul>
+                                    <li>Eget bad</li>
+                                    <li>Håndklæder og sengelinned er inklusiv</li>
+                                    <li>Gratis WIFI</li>
+                                    <li>TV på alle værelser</li>
+                                    <li>Gratis té og kaffe</li>
+                                    <li>Røgfri</li>
+                                    <li>Gæstekøkken adgang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-display" id="room4" data-room="4">
+                        <div class="room-images">
+                            <img src="/images/v_demo1.jpg" alt="Room Image 1">
+                            <img src="/images/v_demo2.jpg" alt="Room Image 2">
+                        </div>
+                        <h3>1800 kr. pr. nat</h3>
+                        <div class="room-details">
+                            
+                            <div class="room-description">
+                                <p>Udstyret med 3 dobbeltværelser, 2 badeværelser og stort køkken, er dette den perfekte lejlighed til en udflugt for flere rejsende. Hele lejligheden er til jeres rådighed, og I vil have udsigt over de skønne omgivelser af den gamle bydel i Viborg.<br><br><b>Rabat gives ved længere ophold.</b></p>
+                            </div>
+                            <div class="room-features">
+                                <ul>
+                                    <li>3 dobbeltværelser</li>
+                                    <li>Stort køkken</li>
+                                    <li>2 badeværelser</li>
+                                    <li>Håndklæder og sengelinned er inklusiv</li>
+                                    <li>Gratis WIFI</li>
+                                    <li>TV</li>
+                                    <li>Gratis té og kaffe</li>
+                                    <li>Røgfri</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+                <!-- Additional room details will be loaded here with JavaScript -->
+            </div>
+        </section>
+        <!-- About us section-->
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Byhus fra 1877</h2>
+                        <p>Midt i Viborgs historiske gader findes Nattely Bed & Breakfast. Med sin enestående beliggenhed er du garanteret et værelse med en skøn udsigt over enten Gråbrødre Kloster eller den charmerende og brostensbelagte Sct. Mogens Gade. Takket være den centrale placering er du som gæst aldrig langt fra hverken gågader, indkøbsmuligheder eller det pulserende byliv og de dertilhørende caféer og restauranter.</p>
+                        <p>Hos Nattely er du sikret en behagelig overnatning, og du kan selv vælge, om du vil have et enkelt- eller dobbeltværelse. Ønsker du et privat badeværelse, kan vi også imødekomme det. Vi kan også tilbyde en lejlighed med 3 dobbeltværelser, 2 badeværelser og et stort køkken.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/images/nattely_faciliteter.jpg" alt="Our Bed & Breakfast">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="/images/About-us.jpg" alt="Byhus fra 1877">
+                    </div>
+                    <div class="about-text">
+                        <div class="about-text">
+                            <h2>Om os</h2>
+                            <p>Vi er et lille bed and breakfast, hvor der er massere af hygge og rolighed. Vi tilbyder gode senge, skabe, tv og endda borde og stole på alle vores værelser.</p>
+                            <ul class="about-highlights">
+                                <li>Lokaliseret i den gamle bydel af Viborg den gamle hovedstad.</li>
+                                <li>Gratis te og kaffe til Nattelys gæster.</li>
+                                <li>Gratis wifi.</li>
+                                <li>TV på alle værelser</li>
+                                <li>Mulighed for at tilberede sin morgenmad i gæstekøkkenet, som har moderne faciliteter.</li>
+                                <li>Røgfri omgivelser.</li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- Find Us Section -->
+
+        <section id="find-us">
+            <div class="find-us-container">
+                <div class="location-info">
+                <div class="text-section">
+                    <h2>Find os her:</h2>
+                    <p>Besøg os på vores bekvemme beliggenhed i hjertet af byen. Let tilgængelig med offentlig transport og tilbyder rigelige parkeringsmuligheder i nærheden, det kunne ikke være nemmere at komme hertil.</p>
+                    <p>
+                        <br>
+                        <b>Nattely i Viborg by</b><br>
+                        <b>Sct. Mogens Gade 14, 8800 Viborg</b>
+                    </p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4409.818654580173!2d9.405877255336208!3d56.45209409069302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464be4675f846a61%3A0xdaacd671e3510f8b!2sNattely!5e0!3m2!1sda!2sdk!4v1710590634259!5m2!1sda!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+              <section id="parking-options">
+                <div class="parking-title">
+                    <h2>Parkerings muligheder</h2>
+                    <p>For nemheds skyld er her et par parkeringsmuligheder i nærheden af ​​vores lokation:</p>
+                </div>
+                <div class="parking-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.8680353103978!2d9.407057427394895!3d56.452805578401936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464be59ed0b43fd1%3A0xa605c6b354ef75c4!2sP-plads!5e0!3m2!1sda!2sdk!4v1710590684023!5m2!1sda!2sdk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2205.001263472163!2d9.410563325269324!3d56.450509949342454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464be45e1727304f%3A0x8cc26e4eeff1da2f!2sSankt%20Ibs%20Gade%203%20Parking!5e0!3m2!1sda!2sdk!4v1710590716076!5m2!1sda!2sdk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            </div>
+          </section>
+
+          <!-- CONTACT-->
+          <section id="contact">
+            <div class="contact-container">
+              <div class="contact-info">
+                <h2>Kontakt os for booking!</h2>
+                <hr>
+                <p>Send os en besked igennem kontakt formularen, eller kontakt os på nedestående oplysninger hvis du ønsker at booke et værelse eller hele lejligheden.</p>
+                <address>
+                    Nattely Bed And Breakfast<br>
+                    Sct. Mogens gade 14, 8800 Viborg<br>
+                    <a href="mailto:lisbeth.carstensen@live.dk">lisbeth.carstensen@live.dk</a><br>
+                    Tlf.: +45 20 27 32 42
+                    
+                </address>
+              </div>
+              <div class="contact-form">
+                <form action="#" method="post">
+                  <label for="name">Navn</label>
+                  <input type="text" id="name" name="name">
+                  
+                  <label for="phone">Telefon nummer</label>
+                  <input type="tel" id="phone" name="phone">
+                  
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                  
+                  <label for="message">Besked</label>
+                  <textarea id="message" name="message"></textarea>
+                  
+                  <button type="submit">Send besked</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="footer-container">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/pages/Nattely/265623387124206" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="copyright">
+                    © 2024 Nattely i Viborg
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Additional content can go here -->
+    <script src="script.js"></script>
+</body>
+</html>
